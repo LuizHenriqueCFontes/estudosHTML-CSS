@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(201, 201, 201);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+p{
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+ul{
+    font-size: 1.3em;
+}
