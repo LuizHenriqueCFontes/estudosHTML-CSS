@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/media-query.css">
+    <title>Media Query</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, obcaecati suscipit, laborum placeat amet iste consequuntur id labore, ipsum officiis eius sit natus saepe maiores distinctio quos dicta? Rem, sequi?
+            Eveniet, alias. Pariatur molestias ex quisquam exercitationem excepturi beatae, inventore omnis incidunt facilis cumque repellendus obcaecati ipsam aut laborum eligendi dolorum ullam id quaerat debitis? Inventore voluptatem quod a delectus.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, distinctio eius quod molestiae tempora vel reiciendis, illo rem itaque nisi aliquid enim fuga doloremque. Cupiditate animi ducimus libero corporis iure?
+            Id beatae sit, numquam cum soluta ducimus autem error mollitia iure possimus eaque aperiam provident rem amet quae itaque quaerat, laboriosam quibusdam dolores reprehenderit facere. Sed sapiente odit molestiae animi?
+            Ex provident excepturi repellendus recusandae eveniet earum? Rem non aliquid mollitia sapiente temporibus, quis sit eos assumenda, esse, aperiam voluptatem praesentium doloremque unde neque sed asperiores ipsum iste error quisquam.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore ut cum est enim error laborum! Maxime, accusamus! Fugiat recusandae ea obcaecati similique nisi id quam molestias delectus magni soluta!
+            Vel recusandae quidem dolore possimus, dolor odit maiores optio nulla! Itaque, aliquid. Iusto natus maiores hic magnam reiciendis dolorum. Et, esse. Quaerat, molestias enim! Asperiores suscipit itaque vitae at. Est!
+            Quae cumque, molestias voluptates quas officia nulla, atque recusandae voluptatum vitae excepturi doloribus, voluptate ad magnam accusantium inventore corrupti consequuntur praesentium ut nemo id! Suscipit doloremque rerum adipisci error voluptatem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro saepe quas animi ipsa? Soluta commodi asperiores error nam unde, corporis tenetur corrupti veniam incidunt exercitationem perferendis ad pariatur numquam cum.
+            Explicabo consequatur quia, optio perspiciatis officiis fugit, ipsam debitis similique doloribus voluptatibus error ullam corporis excepturi hic, dolorum veniam et sint voluptate voluptas esse. Minima eum ex ipsa tempore sit.
+            Cupiditate aspernatur harum obcaecati hic et aperiam, tempora deserunt magnam voluptatibus nulla accusamus ratione corrupti voluptate. Quaerat repellendus, nobis ex, odio optio, expedita aliquid molestiae nihil similique nemo amet dolore?</p>
+        </article>
+    </main>
+    
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none';
+
+            } else{
+                itens.style.display = 'block'
+
+            }
+        }
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block';
+
+            }else{
+                itens.style.display = 'none';
+            }
+
+        }
+    </script>
+</body>
+</html>
